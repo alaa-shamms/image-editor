@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Pictures</title>
+    <link rel="stylesheet" href="style/all.css">
+    <!-- for css -->
+    <link rel="stylesheet" href="style/index.css" />
+    <!-- for media  query -->
+    <link rel="stylesheet" href="style/media.css">
+
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- images -->
+        <div class="img">
+            <!-- 1 -->
+            <div class="img-box">
+                <img src="" id="img">
+                <canvas id="canvas"></canvas>
+            </div>
+            <!-- 2 -->
+            <div class="upload-image">
+                <label for="upload">upload image</label>
+                <input type="file" id="upload" name="myfile">
+            </div>
+
+        </div>
+        <!-- for filters -->
+        <div class="filters">
+            <ul>
+                <!-- Saturate -->
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                </li>
+                <!-- Contrast -->
+                <li>
+                    <label for="contrast">Contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                </li>
+                <!-- Brightness -->
+                <li>
+                    <label for="brightness">Brightness</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100">
+                </li>
+                 <!-- Sepia -->
+                <li>
+                    <label for="sepia">Sepia</label>
+                    <input type="range" id="sepia" min="0" max="200" value="0">
+                </li>
+                 <!-- Grauscale -->
+                <li>
+                    <label for="grayscale">Grayscale</label>
+                    <input type="range" id="grayscale" step="0.1" min="0" max="1" value="0">
+                </li> 
+                <!-- Blur -->
+                <li>
+                    <label for="blur">Blur</label>
+                    <input type="range" id="blur" step="0.1" min="0" max="10" value="0">
+                </li>
+                 <!-- Hue Rotate -->
+                <li>
+                    <label for="hue-rotate">Hue Rotate</label>
+                    <input type="range" id="hue-rotate"  min="0" max="360" value="0">
+                </li>
+                <!-- Invert -->
+                <li>
+                    <label for="invert">Invert</label>
+                    <input type="range" id="invert"  min="0" max="100" value="0">
+                </li>
+                <!-- for download and reset -->
+                <li>
+                    <a download="image with filters" id="download">Download</a>
+                    <span id="reset">Reset</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
